@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Poppins:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: 'Indie Flower', cursive, 'Montserrat', sans-serif;
+
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #fc4a1a 0%, #f7b733 100%);
+}
+
+.container{
+    height: 90vh;
+    width: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    height: calc(100% / 6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 90%;
+    width: calc(100% / 6);
+    border-radius: 1em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid white;
+    background: transparent;
+
+}
+
+button:hover {
+    height: 93%;
+    width: calc(105% / 6);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: center;
+}
+
+.cover{
+    display: none;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 1px solid red;
+}
+
+#start {
+    height: 10%;
+    width: auto;
+    padding: 0 0.3em 0 0.3em;
+    font-size: 3em;
+    color: white;
+    border: 1px solid white;
+}
+
+#win{
+    display: none;
+    font-size: 3em;
+    color: white;
+}
+
+#restart{
+    z-index: 3;
+    height: 10%;
+    width: auto;
+    padding: 0 0.3em 0 0.3em;
+    font-size: 3em;
+    color: white;
+    border: 1px solid white;
+}
+
+
+@media screen and(max-width: 550px){
+
+    .container{
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    button:not(#restart) {
+    height: 90%;
+    width: calc(100% / 6);
+    border-radius: 1em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid white;
+    background: transparent;
+
+}
+
+button:hover {
+    height: 93%;
+    width: calc(105% / 6);
+}
+
+}
