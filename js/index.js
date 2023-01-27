@@ -41,10 +41,12 @@ function hideImages(){
 
 let prevImage = null;
 let ct = 0;
+let tries = 0;
 function isSame(event){
     this.getElementsByTagName('img')[0].style.display = 'block';
     this.disabled = true;
     ct ++;
+    tries ++;
     if (prevImage === null) {
         prevImage = this.getElementsByTagName('img')[0];
     }
@@ -69,6 +71,7 @@ function isSame(event){
     }
     if (ct === 36){
         document.getElementById('win').style.display = 'block';
+        document.getElementById('win').innerText = `Win!! Attempts :-  ${tries}`;
         let rows = document.getElementsByClassName('row');
         for (let row of rows) {
             row.style.display = 'none';
