@@ -92,30 +92,15 @@ img{
 }
 
 
-@media screen and(max-width: 550px){
+@media screen and (max-width: 550px){
 
     .container{
-    height: 90vh;
-    width: 50vw;
+    height: 80vh;
+    width: 95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     }
-
-    button:not(#restart) {
-    height: 90%;
-    width: calc(100% / 6);
-    border-radius: 1em;
-    margin: 0.5em 0.5em 0.5em 0.5em;
-    border: 1px solid white;
-    background: transparent;
-
-}
-
-button:hover {
-    height: 93%;
-    width: calc(105% / 6);
-}
 
 }
